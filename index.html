@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment On Module 04</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container px-3 my-5">
+      <div class="card" id="product-tab">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+              <h2>All Products</h2>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 text-end"
+            >
+              <button
+                type="button"
+                class="btn text-success"
+                id="view-cart"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>&nbsp;View
+                Cart&nbsp;<span id="total-item"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div
+              class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
+              id="category-list"
+            ></div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="input-group input-group-lg">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search Product"
+                  id="search-product"
+                />
+                <span class="input-group-text">
+                  <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="product-list" id="list-div"></div>
+        </div>
+      </div>
+
+      <div class="card" id="cart-tab">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+              <h2>All Cart Items</h2>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 text-end"
+            >
+              <button
+                type="button"
+                class="btn btn-info"
+                id="view-product-tab"
+              >
+                All Products
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="row">
+            <div
+              class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
+            >
+              <div class="input-group mb-3">
+                <input
+                  type="number"
+                  min="0"
+                  class="form-control"
+                  id="discount-input"
+                  placeholder="Apply Discount (%)"
+                />
+                <button type="button" class="btn btn-primary bg-success" id="discount-btn">
+                  Apply Discount (%)
+                </button>
+                <button
+                  class="btn btn-danger"
+                  type="button"
+                  id="cancel-discount-btn"
+                >
+                  Cancel Discount
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="text-center py-3 px-4" style="min-width: 400px">
+                    Product Name &amp; Details
+                  </th>
+                  <th class="text-center py-3 px-4" style="width: 100px">
+                    Price
+                  </th>
+                  <th class="text-center py-3 px-4" style="width: 190px">
+                    Quantity
+                  </th>
+                  <th class="text-center py-3 px-4" style="width: 135px">
+                    Total
+                  </th>
+                  <th
+                    class="text-center align-middle py-3 px-0"
+                    style="width: 100px"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-2"
+                      id="clearCart"
+                      data-bs-toggle="tooltip"
+                      title="Clear All Cart Items!"
+                    >
+                      Clear
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="cart-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8e5ba9f7fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

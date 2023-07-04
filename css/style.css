@@ -1,0 +1,49 @@
+body {
+  margin-top: 20px;
+  background: #eee;
+}
+.ui-w-65 {
+  width: 65px !important;
+  height: auto;
+}
+.card {
+  box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.08);
+}
+.card-text {
+  font-size: 12px;
+}
+.card-product {
+  width: 300px;
+}
+.btn-cart {
+  width: 100%;
+  border-radius: 0px;
+}
+.ui-product-color {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0.144em;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 10rem;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+  vertical-align: middle;
+}
+.btn {
+  border-radius: 0px;
+}
+.form-control {
+  border-radius: 0px;
+}
+/* Works for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Works for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
